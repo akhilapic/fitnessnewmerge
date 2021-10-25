@@ -21,7 +21,7 @@ class workoutPlansController extends Controller
     public function index()
     { 
         //$workoutplans = workoutPlans::all(); 
-  $workoutplans = workoutPlans::join('workout_category',"workout_category.id","=","workout_plans.category")
+        $workoutplans = workoutPlans::join('workout_category',"workout_category.id","=","workout_plans.category")
                     ->get(['workout_category.name as category_name','workout_plans.*']);
 
                  //   dd($workoutplans); 
@@ -458,17 +458,18 @@ class workoutPlansController extends Controller
        
         $collection=collect($wokout);
         
-      //  dd($wokout);
+      //  dd($collection);
       // if($wokout[0][6]!="null"){
       //   echo var_dump($wokout[0][6]);
       //   dd($wokout);
       // }else{
       //   dd($wokout[0][6]);
       // }
-
+        // dd($wokout);
+        // exit;
         $ex=array_column($wokout,2);
-        //$ids = array_column($wokout,1);
-        $ids = array_column($wokout,0);
+        $ids = array_column($wokout,1);
+       // $ids = array_column($wokout,0);
 
         // $reps=array_column($wokout,3);
         // $sats=array_column($wokout,4);
@@ -477,7 +478,7 @@ class workoutPlansController extends Controller
         $arabic_excercise_name  = array_column($wokout,10);
 
         $reps=array_column($wokout,4);
-        $sats=array_column($wokout,6);
+        $sats=array_column($wokout,5);
 
         $caloriesarr =array_column($wokout,6);
         $excercise_name=array_unique($ex);
@@ -610,6 +611,8 @@ class workoutPlansController extends Controller
      //    }
      // }
      // exit;
+   //     dd($days);
+
   $workout_category = DB::table('workout_category')->get();
    if($workoutPlans){
             return view('Pages.workoutplans.edit_workout_plan_view',compact('workoutPlans','no_of_days','exercise_details','days','fitnesstrainers','workout_category'));

@@ -364,7 +364,7 @@ class userController extends Controller
         //session(["gender"=>$request->gender]);
         $request->session()->put('weight',$request->weight);
         //session(["weight"=>$request->weight]);
-       dd($request->input());
+   //    dd($request->input());
         if(!is_null($request->weight_lb)){
            // session(["weight_unit"=>$request->weight_unit]);
             $request->session()->put('weight_unit',$request->LB);
@@ -439,7 +439,11 @@ class userController extends Controller
                 Session::forget('interest');
                 Session::forget('exercise');
                 Session::forget('exercise');
-                $result = array('status'=>true, 'message'=>'Fitness Survey Successfully');
+                // $url =url('membership');
+                // $result = array('status'=>true, 'message'=>'Fitness Survey Successfully',
+                //     "url"=>$url );
+             
+                return redirect()->to('membership');
             }
             else{
                 $result = array('status'=>false, 'message'=>'Something Went Wrong');

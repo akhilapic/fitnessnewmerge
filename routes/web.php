@@ -204,3 +204,8 @@ Route::get('/fitness-survey', function () {
  Route::post('/fitness_survey_one', 'App\Http\Controllers\Api\userController@fitness_one')->name('fitness_survey_one');
  Route::post('/fitness_survey_two', 'App\Http\Controllers\Api\userController@fitness_two')->name('fitness_survey_two');
  Route::post('/fitness_survey_three', 'App\Http\Controllers\Api\userController@fitness_survey')->name('fitness_survey_three');  
+
+
+ Route::get('/membership', function () {
+   return view('Pages.membership');
+});

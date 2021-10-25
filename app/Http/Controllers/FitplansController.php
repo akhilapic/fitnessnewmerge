@@ -266,7 +266,15 @@ class FitplansController extends Controller
       
          foreach($workout as $val)
         {
-            $val->amount = number_format($val->amount,2,".");
+           if(!empty($val->amount))
+            {
+             $val->amount = number_format($val->amount,2,".");
+            }
+            else
+            {
+                 $val->amount = "0.00";
+           
+            }
             $days = ExcerciseName::where(array("workout_plans_id"=>$val->id))->get();
             $val->day =isset( $days)? $days:'';
                 $workoutplan['workout']=$val;
@@ -287,7 +295,15 @@ class FitplansController extends Controller
          foreach($workout as $val)
         {
             $val->level = ucfirst($val->level);
-            $val->amount = number_format($val->amount,2,".");
+        if(!empty($val->amount))
+            {
+             $val->amount = number_format($val->amount,2,".");
+            }
+            else
+            {
+                 $val->amount = "0.00";
+           
+            }
             $days = ExcerciseName::where(array("workout_plans_id"=>$val->id))->get();
             $val->day =isset( $days)? $days:'';
                 $workoutplan['workout']=$val;
@@ -302,13 +318,21 @@ class FitplansController extends Controller
         $workoutplan =[];
         $exercise_details=[];  
         $workout = workoutPlans::join('users', 'users.id', '=', 'workout_plans.trainer_id')
+        ->join('workout_category', 'workout_category.id', '=', 'workout_plans.category')
                     ->where(array("workout_plans.id"=>$workoutid))
-                    ->get(['workout_plans.*', 'users.name as fitness_trainers_name']);
-      
+                    ->get(['workout_plans.*', 'users.name as fitness_trainers_name','workout_category.name as category']);
          foreach($workout as $val)
         {
             $val->level = ucfirst($val->level);
-            $val->amount = number_format($val->amount,2,".");
+         if(!empty($val->amount))
+            {
+             $val->amount = number_format($val->amount,2,".");
+            }
+            else
+            {
+                 $val->amount = "0.00";
+           
+            }
             $days = ExcerciseName::where(array("workout_plans_id"=>$val->id))->get();
             $val->day =isset( $days)? $days:'';
                 $workoutplan['workout']=$val;
@@ -330,7 +354,7 @@ class FitplansController extends Controller
         }
 
         //dd($workoutplan);
-
+  $workout_category = DB::table('workout_category')->get();
 
         foreach($workoutplan as $w)
         {
@@ -338,6 +362,7 @@ class FitplansController extends Controller
             {
                 $exercise_details[]=ExcerciseDetails::where('exercise_name_id',$ex->id)->get();
             }
+
         }
 
        //  echo "<pre>";
@@ -348,7 +373,8 @@ class FitplansController extends Controller
        //      print_r($s[0]->id);
        //  }
         //exit;
-          $workout_category = DB::table('workout_category')->get();
+    //    dd($workoutplan);
+        
         return view('after_payment',compact('workoutplan','exercise_details','workout_category'));
     }
 }

@@ -141,7 +141,7 @@
 									{{session()->put('data','0')}}
 									<div class="number_of_day_list box_number_of_day" data-id="{{$key+1}}">
 									<div class="input-group">
-									<input type="hidden" name ="no_of_days_id" id="no_of_days_id{{$key+1}}" value="{{$days[$key][1]}}"/>
+									<input type="hidden" name ="no_of_days_id" id="no_of_days_id{{$key+1}}" value="{{$days[$key][2]}}"/>
 									<input type="text" required name="workoutname" id="workoutname{{$key+1}}" class="form-control workout_name" placeholder="WorkOut Name Of Day {{$key+1}}" value="{{$days[$key][0]}}">
 
 									<input type="text" required name="workoutarabicname" id="workoutarabicname{{$key+1}}" class="form-control workoutarabicname" placeholder="WorkOut Name Of Day {{$key+1}}" value="{{$days[$key][1]}}">

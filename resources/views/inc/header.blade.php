@@ -48,7 +48,7 @@
 					<div class="col-lg-5">
 						<ul class="d-lg-flex aic justify-content-start header-menus">
 							<li><a href="{{url('/fit-plans')}}">Fit Plans</a></li>
-							<li><a href="membership.html">Membership</a></li>
+							<li><a href="{{url('/membership')}}">Membership</a></li>
 							<li><a href="contactus.html">Contact Us</a></li>
 						</ul>
 					</div>
