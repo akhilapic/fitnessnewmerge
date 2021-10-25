@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.869" height="35.608" viewBox="0 0 42.869 35.608">
+  <g id="dumbbell" transform="matrix(0.848, -0.53, 0.53, 0.848, -2.812, 19.77)">
+    <path id="Path_48949" data-name="Path 48949" d="M140.172,70.086h15.639v7.708H140.172Zm0,0" transform="translate(-126.268 -62.683)" fill="#fff"/>
+    <path id="Path_48950" data-name="Path 48950" d="M405.249,48.953h-1.085V60.32h1.085a2.274,2.274,0,0,0,2.271-2.272V51.224a2.274,2.274,0,0,0-2.271-2.271Zm0,0" transform="translate(-364.073 -43.647)" fill="#fff"/>
+    <path id="Path_48951" data-name="Path 48951" d="M322.137.5h-4.309V22.013h4.309a2.274,2.274,0,0,0,2.271-2.271V2.771A2.274,2.274,0,0,0,322.137.5Zm0,0" transform="translate(-286.301 0)" fill="#fff"/>
+    <path id="Path_48952" data-name="Path 48952" d="M53.836,2.771v16.97a2.274,2.274,0,0,0,2.271,2.271h4.309V.5H56.107a2.274,2.274,0,0,0-2.271,2.271Zm0,0" transform="translate(-48.496)" fill="#fff"/>
+    <path id="Path_48953" data-name="Path 48953" d="M0,51.225v6.823A2.274,2.274,0,0,0,2.271,60.32H3.356V48.953H2.271A2.274,2.274,0,0,0,0,51.225Zm0,0" transform="translate(0 -43.647)" fill="#fff"/>
+  </g>
+</svg>

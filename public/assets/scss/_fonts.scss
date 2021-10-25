@@ -1,0 +1,576 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?x3sbi3');
+  src:  url('../fonts/icomoon.eot?x3sbi3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?x3sbi3') format('truetype'),
+    url('../fonts/icomoon.woff?x3sbi3') format('woff'),
+    url('../fonts/icomoon.svg?x3sbi3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fii-"], [class*=" fii-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fii-support:before {
+  content: "\e900";
+  color: #54BFCC;
+}
+.fii-acc-arrow-down:before {
+  content: "\e901";
+  color: #54BFCC;
+}
+.fii-acc-arrow-up:before {
+  content: "\e902";
+  color: #54BFCC;
+}
+.fii-active-plan-d:before {
+  content: "\e903";
+}
+.fii-add-circle-d .path1:before {
+  content: "\e904";
+  color: rgb(251, 228, 228);
+}
+.fii-add-circle-d .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-add-circle-d .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-add-circle-d .path4:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-add-d:before {
+  content: "\e908";
+}
+.fii-angle-arrow:before {
+  content: "\e909";
+  color: #54BFCC;
+}
+.fii-angle-arrow-down:before {
+  content: "\e90a";
+  color: #54BFCC;
+}
+.fii-angle-arrow-left:before {
+  content: "\e90b";
+  color: #54BFCC;
+}
+.fii-anglearrow-left-sm:before {
+  content: "\e90c";
+  color: #565c63;
+}
+.fii-angle-arrow-right:before {
+  content: "\e90d";
+  color: #54BFCC;
+}
+.fii-arrow-right:before {
+  content: "\e90e";
+  color: #fff;
+}
+.fii-arrow-right-round .path1:before {
+  content: "\e90f";
+  color: rgb(255, 255, 255);
+}
+.fii-arrow-right-round .path2:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-arrow-right-round .path3:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-bank-d:before {
+  content: "\e912";
+}
+.fii-booking-d:before {
+  content: "\e913";
+}
+.fii-bookmark:before {
+  content: "\e914";
+  color: #fff;
+}
+.fii-bookmark-d .path1:before {
+  content: "\e915";
+  color: rgb(15, 42, 74);
+}
+.fii-bookmark-d .path2:before {
+  content: "\e916";
+  margin-left: -0.77734375em;
+  color: rgb(255, 255, 255);
+}
+.fii-bookmark-red-d .path1:before {
+  content: "\e917";
+  color: #54BFCC;
+}
+.fii-bookmark-red-d .path2:before {
+  content: "\e918";
+  margin-left: -0.77734375em;
+  color: rgb(255, 255, 255);
+}
+.fii-bookmark-star:before {
+  content: "\e919";
+  color: #a8a5a5;
+}
+.fii-call-end:before {
+  content: "\e91a";
+  color: #54BFCC;
+}
+.fii-calroies-d:before {
+  content: "\e91b";
+  color: #d1d1d1;
+}
+.fii-camera-white-d:before {
+  content: "\e91c";
+  color: #fff;
+}
+.fii-card .path1:before {
+  content: "\e91d";
+  color: rgb(255, 255, 255);
+}
+.fii-card .path2:before {
+  content: "\e91e";
+  margin-left: -1.361328125em;
+  color: rgb(190, 149, 149);
+}
+.fii-card .path3:before {
+  content: "\e91f";
+  margin-left: -1.361328125em;
+  color: rgb(190, 149, 149);
+}
+.fii-card-gray:before {
+  content: "\e920";
+  color: #a8a5a5;
+}
+.fii-caret-arrow-down:before {
+  content: "\e921";
+  color: #d1d1d1;
+}
+.fii-chat-ic:before {
+  content: "\e922";
+  color: #fff;
+}
+.fii-chat-sq:before {
+  content: "\e923";
+  color: #54BFCC;
+}
+.fii-chat-white-d:before {
+  content: "\e924";
+  color: #fff;
+}
+.fii-check-gray-d:before {
+  content: "\e925";
+}
+.fii-check-white-d:before {
+  content: "\e926";
+}
+.fii-clock-d:before {
+  content: "\e927";
+  color: #d1d1d1;
+}
+.fii-close:before {
+  content: "\e928";
+  color: #fff;
+}
+.fii-close-gray-d:before {
+  content: "\e929";
+  color: #a8a5a5;
+}
+.fii-close-white-d:before {
+  content: "\e92a";
+}
+.fii-date-d:before {
+  content: "\e92b";
+}
+.fii-double-arrow:before {
+  content: "\e92c";
+  color: #757575;
+}
+.fii-download:before {
+  content: "\e92d";
+  color: #54BFCC;
+}
+.fii-download-d:before {
+  content: "\e92e";
+}
+.fii-download-gray-d:before {
+  content: "\e92f";
+  color: #d1d1d1;
+}
+.fii-dumbbell:before {
+  content: "\e930";
+  color: #fff;
+}
+.fii-dumbell-ic:before {
+  content: "\e931";
+  color: #fff;
+}
+.fii-edit:before {
+  content: "\e932";
+  color: #54BFCC;
+}
+.fii-edit-d:before {
+  content: "\e933";
+  color: #54BFCC;
+}
+.fii-edit-gray-d:before {
+  content: "\e934";
+  color: #565c63;
+}
+.fii-edit-white-d:before {
+  content: "\e935";
+  color: #fff;
+}
+.fii-eye:before {
+  content: "\e936";
+  color: #818d98;
+}
+.fii-eye-d:before {
+  content: "\e937";
+  color: #a8a5a5;
+}
+.fii-filter:before {
+  content: "\e938";
+}
+.fii-fire:before {
+  content: "\e939";
+  color: #fff;
+}
+.fii-gift-box:before {
+  content: "\e93a";
+  color: #fff;
+}
+.fii-Group-15338:before {
+  content: "\e93b";
+}
+.fii-live-camera:before {
+  content: "\e93c";
+  color: #fff;
+}
+.fii-logout-d:before {
+  content: "\e93d";
+  color: #be9595;
+}
+.fii-logut-blue-d:before {
+  content: "\e93e";
+}
+.fii-long-right-arrow-white-d:before {
+  content: "\e93f";
+  color: #fff;
+}
+.fii-manage-d .path1:before {
+  content: "\e940";
+  color: rgb(251, 228, 228);
+}
+.fii-manage-d .path2:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: none;
+}
+.fii-manage-d .path3:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-manage-d .path4:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-manage-d .path5:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-manage-d .path6:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: #54BFCC;
+}
+.fii-membership-d:before {
+  content: "\e946";
+}
+.fii-more-d:before {
+  content: "\e947";
+  color: #a8a5a5;
+}
+.fii-mouse:before {
+  content: "\e948";
+  color: #fff;
+}
+.fii-mute_off:before {
+  content: "\e949";
+  color: #a8a5a5;
+}
+.fii-notification:before {
+  content: "\e94a";
+}
+.fii-percent:before {
+  content: "\e94b";
+  color: #fff;
+}
+.fii-progress-d:before {
+  content: "\e94c";
+}
+.fii-quote:before {
+  content: "\e94d";
+  color: #757575;
+}
+.fii-rating-likes:before {
+  content: "\e94e";
+  color: #fff;
+}
+.fii-red-drop-arrow-d:before {
+  content: "\e94f";
+}
+.fii-right-arrow-d:before {
+  content: "\e950";
+}
+.fii-search:before {
+  content: "\e951";
+  color: #a8a5a5;
+}
+.fii-secure-pay:before {
+  content: "\e952";
+  color: #54BFCC;
+}
+.fii-select-dropdown-d:before {
+  content: "\e953";
+  color: #d1d1d1;
+}
+.fii-send:before {
+  content: "\e954";
+  color: #fafafa;
+}
+.fii-signout-d:before {
+  content: "\e955";
+  color: #a8a5a5;
+}
+.fii-sort:before {
+  content: "\e956";
+}
+.fii-star:before {
+  content: "\e957";
+  color: #ffb300;
+}
+.fii-star-gray-d:before {
+  content: "\e958";
+  color: #565c63;
+}
+.fii-star-yellow-d:before {
+  content: "\e959";
+  color: #ffb300;
+}
+.fii-tick:before {
+  content: "\e95a";
+  color: #2ab790;
+}
+.fii-tick-round:before {
+  content: "\e95b";
+  color: #a8a5a5;
+}
+.fii-tick-round-green .path1:before {
+  content: "\e95c";
+  color: rgb(255, 255, 255);
+}
+.fii-tick-round-green .path2:before {
+  content: "\e95d";
+  margin-left: -1.068359375em;
+  color: rgb(209, 209, 209);
+}
+.fii-tick-round-green .path3:before {
+  content: "\e95e";
+  margin-left: -1.068359375em;
+  color: rgb(42, 183, 144);
+}
+.fii-tick-round-white .path1:before {
+  content: "\e95f";
+  color: rgb(255, 255, 255);
+}
+.fii-tick-round-white .path2:before {
+  content: "\e960";
+  margin-left: -1.068359375em;
+  color: rgb(255, 255, 255);
+}
+.fii-tick-round-white .path3:before {
+  content: "\e961";
+  margin-left: -1.068359375em;
+  color: rgb(42, 183, 144);
+}
+.fii-tick-white:before {
+  content: "\e962";
+  color: #fff;
+}
+.fii-timer:before {
+  content: "\e963";
+  color: #fff;
+}
+.fii-transaction-d:before {
+  content: "\e964";
+}
+.fii-unlock:before {
+  content: "\e965";
+  color: #fff;
+}
+.fii-user-d:before {
+  content: "\e966";
+}
+.fii-varify-d .path1:before {
+  content: "\e967";
+  color: rgb(255, 255, 255);
+}
+.fii-varify-d .path2:before {
+  content: "\e968";
+  margin-left: -1.068359375em;
+  color: rgb(0, 190, 177);
+}
+.fii-varify-d .path3:before {
+  content: "\e969";
+  margin-left: -1.068359375em;
+  color: rgb(42, 183, 144);
+}
+.fii-verify-green-d .path1:before {
+  content: "\e96a";
+  color: rgb(255, 255, 255);
+}
+.fii-verify-green-d .path2:before {
+  content: "\e96b";
+  margin-left: -1.068359375em;
+  color: rgb(209, 209, 209);
+}
+.fii-verify-green-d .path3:before {
+  content: "\e96c";
+  margin-left: -1.068359375em;
+  color: rgb(42, 183, 144);
+}
+.fii-verify-white-d:before {
+  content: "\e96d";
+  color: #fff;
+}
+.fii-video:before {
+  content: "\e96e";
+  color: #a8a5a5;
+}
+.fii-video-white-d:before {
+  content: "\e96f";
+  color: #fff;
+}
+.fii-v-play-d:before {
+  content: "\e970";
+  color: #fff;
+}
+
+
+
+
+
+/*************** Roboto Font ****************/
+
+/* font Black */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.eot');
+  src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Black.woff2') format('woff2'),
+      url('../fonts/Roboto-Black.woff') format('woff'),
+      url('../fonts/Roboto-Black.ttf') format('truetype'),
+      url('../fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Font Light */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.eot');
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Light.woff2') format('woff2'),
+      url('../fonts/Roboto-Light.woff') format('woff'),
+      url('../fonts/Roboto-Light.ttf') format('truetype'),
+      url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Font Bold */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.eot');
+  src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/Roboto-Bold.woff') format('woff'),
+      url('../fonts/Roboto-Bold.ttf') format('truetype'),
+      url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* font Regular */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto-Regular.ttf') format('truetype'),
+      url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* font medium */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.eot');
+  src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto-Medium.woff') format('woff'),
+      url('../fonts/Roboto-Medium.ttf') format('truetype'),
+      url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* font Thin */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Thin.eot');
+  src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Thin.woff2') format('woff2'),
+      url('../fonts/Roboto-Thin.woff') format('woff'),
+      url('../fonts/Roboto-Thin.ttf') format('truetype'),
+      url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+

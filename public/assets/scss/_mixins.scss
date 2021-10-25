@@ -1,0 +1,120 @@
+// Transition mixin 
+@mixin transition($x){
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
+//Transform mixin
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin ($origin) {
+ moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+//border-radius mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-radius-s($tl, $tr, $br, $bl) {
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-right-radius: $br;
+  border-bottom-left-radius: $bl;
+}
+
+//Box Shadow mixin
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: #000) {
+  -webkit-box-shadow: $x-axis $y-axis $blur $color;
+  -moz-box-shadow: $x-axis $y-axis $blur $color;
+  box-shadow: $x-axis $y-axis $blur $color;
+}
+
+@mixin box-shadow-none($none) {
+  -webkit-box-shadow: $none;
+  -moz-box-shadow: $none;
+  box-shadow: $none;
+}
+
+
+
+/* Custom switch Box */
+.custom-switch-box {
+  width: 47px;
+  height: 19px;
+  padding: 0;
+
+  input {
+    width: 100%;
+    height: 100%;
+  }
+  .custom-control-label {
+    width: 100%;
+    height: 100%;
+    display: block;
+      &::before {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 14px;
+        top: 0;
+      }
+
+      &::after {
+        width: 15px;
+        height: 15px;
+        left: calc(3px + 2px);
+        top: 50%;
+        @include transform(translate(0%, -50%));
+        @include border-radius(50%);
+      }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+      border-color: #19C3FB;
+      background-color: #19C3FB;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+      @include transform(translate(150%, -50%));
+  }
+}
+
+
+
